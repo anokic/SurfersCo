@@ -400,7 +400,13 @@ header {
           }
 
           a {
-
+            display: inline-block;
+            color: $mainColor;
+            border-bottom: 2px solid $mainColor;
+            text-decoration: none;
+            padding-bottom: 1px;
+            font-weight: 600;
+            margin-top: 85px;
           }
         }
       }
