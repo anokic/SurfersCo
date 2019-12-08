@@ -1,0 +1,1 @@
+window.onload=()=>{$(".img-block").click((function(){for(element of $(".img-block"))$(element).hasClass("blue-lagoon")&&$(element).removeClass("blue-lagoon");var e=$(this).css("background-image");e=e.replace("url(","").replace(")","").replace(/\"/gi,"").replace("http://127.0.0.1:3000/","../../"),$(".board").attr("src",e),console.log(e),$(this).addClass("blue-lagoon")}))};
