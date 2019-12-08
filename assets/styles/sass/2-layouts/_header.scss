@@ -110,7 +110,7 @@ header {
         text-align: center;
         margin-bottom: 150px;
 
-        h3 {
+        h1 {
           font-size: 3.125rem;
           font-family: 'Playfair Display';
           font-style: italic;
@@ -213,7 +213,7 @@ header {
           width: 55%;
           position: relative;
           z-index: 2;
-          padding: 44px 0 22px 30px;
+          padding: 44px 0 28px 30px;
 
           img {
 
@@ -268,7 +268,9 @@ header {
         .header-right {
           width: 45%;
           height: 100%;
-          padding: 100px 50px 50px 0;
+          padding: 44px 50px 50px 0;
+          position: relative;
+          z-index: 2;
 
           .item-heading {
 
@@ -302,7 +304,7 @@ header {
               .rated {
                 font-size: 0.75rem;
                 font-weight: bold;
-                color: rgb(120, 120, 120);
+                color: $textFont;
               }
             }
           }
@@ -315,8 +317,15 @@ header {
               border-bottom: 1px solid #D9D9D9;
               li {
                 font-size: 0.875rem;
-                padding-bottom: 10px;
+                padding-bottom: 6px;
                 font-weight: bold;
+                border-bottom: 3px solid transparent;
+                position: relative;
+                top: 1px;
+              }
+
+              li:nth-child(1){
+                border-color: $mainColor;
               }
 
               li:nth-child(1), li:nth-child(2){
@@ -328,17 +337,64 @@ header {
             }
 
             p {
-
+              margin-top: 27px;
+              font-family: 'Raleway';
+              color: $textFont;
+              line-height: 1.5;
             }
 
             .bot-info {
-
+              display: flex;
+              align-items: center;
+              margin-top: 36px;
               h4 {
-
+                font-size: 1.5rem;
+                font-weight: 700;
+                font-family: 'Montserrat';
+                margin-right: 30px;
               }
 
               .blue-button {
+                width: 137px;
+                height: 44px;
+                background: $mainColor;
+                color: #fff;
+                font-size: 0.875rem;
+                font-weight: bold;
+                overflow: hidden;
+                position: relative;
+                border: 2px solid transparent;
+                transition: all 0.6s;
 
+                span {
+                  position: relative;
+                  z-index: 2;
+                }
+
+                &::after {
+                  background: #fff;
+                  content: '';
+                  position: absolute;
+                  z-index: 1;
+                  height: 100%;
+                  left: -39%;
+                  top: 0;
+                  transform: skew(50deg);
+                  transition-duration: 0.6s;
+                  transform-origin: top left;
+                  width: 0;
+                  transition: all 0.6s;
+                }
+
+                &:hover:after {
+                  height: 100%!important;
+                  width: 140%!important;
+                }
+
+                &:hover {
+                  color: $mainColor;
+                  border-color: $mainColor;
+                }
               }
             }
           }
