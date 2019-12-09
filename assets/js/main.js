@@ -2,16 +2,121 @@ window.onload = () => {
 
   /// PRODUCTS ///
 
-  $.ajax({
-    url : "../../assets/js/shop.json",
-    success: function(data){
-      console.log("Evo" + data);
+  function products(datas){
+
+    let html = ``;
+
+    for(data of datas){
+
+      html += `<div class="item">
+                      <div class="header-left">
+                        <div class="content-gallery">
+                          <img class='board' src="${data.imgs.img1}" alt="Board">
+                          <div class="img-container">
+                            <div class="img-block blue-lagoon"><img src="${data.imgs.img1}" alt="Board mini image"></div>
+                            <div class="img-block"><img src="${data.imgs.img2}" alt="Board mini image"></div>
+                            <div class="img-block"><img src="${data.imgs.img3}" alt="Board mini image"></div>
+                            <div class="img-block"><img src="${data.imgs.img4}" alt="Board mini image"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="header-right">
+                          <div class="item-heading">
+                            <h4>${data.title}</h4>
+                            <div class="rating">
+                              <div class="stars">
+                                ${stars(data.stars)}
+                              </div>
+                              <span class="rated">(${data.rating})</span>
+                            </div>
+                          </div>
+                          <div class="item-info">
+                            <ul class='sub-nav-ul'>
+                              <li data-obj='desc' data-id="${data.id}" class='subNav active'>DESCRIPTION</li>
+                              <li data-obj='features' data-id="${data.id}" class='subNav'>FEATURES</li>
+                              <li data-obj='dimensions' data-id="${data.id}" class='subNav'>DIMENSIONS</li>
+                            </ul>
+                            <p class='product-paragraph'>${data.desc}</p>
+                            <div class="bot-info">
+                              <h4 class='price'>${data.price}</h4>
+                              <button class='blue-button'><span>BUY NOW</span></button>
+                            </div>
+                          </div>
+                          <a href="">View all boards</a>
+                      </div>
+                    </div>`;
     }
+
+    document.querySelector('.items').innerHTML = html;
+  }
+
+
+  function stars(star){
+    let html = ``;
+    let max = 5;
+    for(let i=1;i<=max;i++){
+      if(star < i){
+        html += `<div class="no-star"></div>`
+      } else {
+        html += `<div class="star"></div>`
+      }
+    }
+    return html;
+  }
+
+
+  $.ajax({
+    url : "assets/js/shop.json",
+    type: "GET",
+    success: function (data) {
+      products(data);
+
+      $(".item").css({
+        'width': ($(".header-content").width() + 'px')
+      });
+
+      $(".items").css({
+        'left': '-'+($(".header-content").width() + 'px')
+      });
+
+      slide(slider, sliderItems, prev, next);
+
+      $('.img-block').click(blueBorder);
+      const itemInfo = document.querySelectorAll('.sub-nav-ul');
+      itemInfo.forEach((item) => {
+
+        let items = item.querySelectorAll('li');
+        items.forEach((li)=>{
+          li.addEventListener('click', function(e){
+            clickEvent(e.srcElement,items);
+          }, false);
+        })
+      })
+
+    },
+    error: function (xhr, status, err) {
+        console.log(err);
+    }
+
   })
 
-  const itemInfo = document.querySelectorAll('.sub-nav-ul');
+
 
   function clickEvent(e,items){
+
+    console.log();
+
+    $.ajax({
+      url : "assets/js/shop.json",
+      type: "GET",
+      success: function (data) {
+        let dataS = data.filter(p=> p.id == e.dataset.id);
+        $(e).parent().parent().find('.product-paragraph').text(dataS[0][e.dataset.obj]);
+        console.log(dataS[0][e.dataset.obj]);
+      }, error: function (status,xhr,err){
+        console.log(err);
+      }
+    })
 
     for(sub of items){
       if(sub.classList.contains('active')){
@@ -22,47 +127,25 @@ window.onload = () => {
     e.classList.add('active');
   }
 
-  itemInfo.forEach((item) => {
-    let items = item.querySelectorAll('li');
-
-    items.forEach((li)=>{
-      li.addEventListener('click', function(e){
-
-        clickEvent(e.srcElement,items);
-      }, false);
-    })
-  })
-  // const subs = document.querySelectorAll('.subNav');
-  //
-  //
-  //
-  // subs.forEach(function(item) {
-  //   item.addEventListener('click', clickEvent, false);
-  // })
-
-
-  $('.img-block').click(blueBorder);
 
   function blueBorder(){
-    for(element of $('.img-block')){
+    for(element of $(this).parent().find('.img-block')){
 
       if($(element).hasClass('blue-lagoon')){
         $(element).removeClass('blue-lagoon');
       }
     }
 
-    var bg = $(this).css('background-image');
-    bg = bg.replace('url(','').replace(')','').replace(/\"/gi, "").replace('http://127.0.0.1:3000/','../../');
-    $('.board').attr('src', bg);
+    $(this).parent().parent().find('.board').attr('src', $(this).find('img').attr('src'));
     $(this).addClass('blue-lagoon');
   }
 
   $(".item").css({
-  'width': ($(".header-content").width() + 'px')
+      'width': ($(".header-content").width() + 'px')
   });
 
   $(".items").css({
-  'left': '-'+($(".header-content").width() + 'px')
+      'left': '-'+($(".header-content").width() + 'px')
   });
 
   /// MOUSE DRAGGING SLIDER ///
@@ -71,7 +154,7 @@ window.onload = () => {
       prev = document.querySelector('.arrow-left-click'),
       next = document.querySelector('.arrow-right-click');
 
-  slide(slider, sliderItems, prev, next);
+
 
   function slide(wrapper, items, prev, next) {
     var posX1 = 0,
@@ -88,6 +171,10 @@ window.onload = () => {
         cloneLast = lastSlide.cloneNode(true),
         index = 0,
         allowShift = true;
+
+
+
+        document.querySelector('.length').innerHTML = "0" + slidesLength;
 
     // Clone first and last slide
     items.appendChild(cloneFirst);
@@ -164,6 +251,15 @@ window.onload = () => {
           index--;
         }
       };
+
+      document.querySelector('.count').innerHTML = '0' + (index+1);
+
+      if(index == 5){
+        document.querySelector('.count').innerHTML = '01';
+      }
+      if(index == -1){
+        document.querySelector('.count').innerHTML = '05';
+      }
 
       allowShift = false;
     }

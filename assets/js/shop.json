@@ -1,158 +1,87 @@
 [
   {
+    "id" : 1,
     "title" :  "JR Surfboards The Donny Stoker Yellow/Green Rail Fade",
     "stars" : 4,
     "rating" : 22,
-    "desc" : "Easy to ride, care free surfing craft that's fun for everyone,
-              paddles well, super fast down the line and great for any level
-              of surfing depending on who rides it. The Donny Stoker, a rework on
-              design from stokesys first ever pro model. A super easy to surf
-              and fun board. The Donny Stoker is a board for total freesurfing
-              expression.",
-     "features" : "The Donny Stoker, a rework on design from stokesys first ever
-                   pro model. A super easy to surf and fun board. The Donny
-                   Stoker is a board for total freesurfing expression. Easy to
-                   ride, care free surfing craft that's fun for everyone,
-                   paddles well, super fast down the line and great for any level
-                   of surfing depending on who rides it.",
-      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever
-                    pro model. A super easy to surf and fun board. The Donny
-                    Stoker is a board for total freesurfing expression. Easy to
-                    ride, care free surfing craft that's fun for everyone,
-                    paddles well, super fast down the line and great for any level
-                    of surfing depending on who rides it.",
-      "price" : "$1299.99",
+    "desc" : "Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.",
+     "features" : "The Five Sugars, is one of the most versatile surfboards we have created , its modern rocker and higher volume makes paddling and wave catching a dream.",
+      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it.",
+      "price" : "$1899.99",
 
       "imgs" : {
         "img1" : "assets/img/board.png",
         "img2" : "assets/img/board-four.png",
         "img3" : "assets/img/board-second.png",
-        "img4" : "assets/img/board-third.png",
+        "img4" : "assets/img/board-third.png"
       }
   },
   {
+    "id" : 2,
     "title" :  "The Donny Stoker Rail Fade JR Surfboards ",
     "stars" : 3,
     "rating" : 44,
-    "desc" : "Care free surfing craft that's fun for everyone,
-              paddles well, super fast down the line and great for any level
-              of surfing depending on who rides it. The Donny Stoker, a rework on
-              design from stokesys first ever pro model. A super easy to surf
-              and fun board. The Donny Stoker is a board for total freesurfing
-              expression.",
-     "features" : "The Donny Stoker, a rework on design from stokesys first ever
-                   pro model. A super easy to surf and fun board. The Donny
-                   Stoker is a board for total freesurfing expression. Easy to
-                   ride, care free surfing craft that's fun for everyone,
-                   paddles well, super fast down the line and great for any level
-                   of surfing depending on who rides it.",
-      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever
-                    pro model. A super easy to surf and fun board. The Donny
-                    Stoker is a board for total freesurfing expression. Easy to
-                    ride, care free surfing craft that's fun for everyone,
-                    paddles well, super fast down the line and great for any level
-                    of surfing depending on who rides it.",
-      "price" : "$499.99",
+    "desc" : "Care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.",
+     "features" : "The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it.",
+      "dimensions" : "The Huevo, in SLX construction, is a classic hybrid surfboard that incorporates the best of both the shortboard and longboard. It’s round nose and fuller tail gives plenty of floatation and makes paddling a breeze. With its shorter length and 2 + 1 fin set up makes for fast responsive turns and manoeuvrability.",
+      "price" : "$2000.00",
 
       "imgs" : {
         "img1" : "assets/img/board2.png",
         "img2" : "assets/img/board2-four.png",
         "img3" : "assets/img/board2-second.png",
-        "img4" : "assets/img/board2-third.png",
+        "img4" : "assets/img/board2-third.png"
       }
   },
   {
+    "id" : 3,
     "title" :  "SALT GYPSY DUSTY – PU",
     "stars" : 4,
     "rating" : 22,
-    "desc" : "Imagine riding in an old Cadillac… You know how the old classic
-              cars just seem to glide and almost float along the road? Well,
-              that’s exactly the feel on offer with the Salt Gypsy Dusty
-              Longboard; a more retro style Longboard with rails and
-              some traditional bottom contours to ensure the whole length of
-              the board is usable. ",
-     "features" : "The Donny Stoker, a rework on design from stokesys first ever
-                   pro model. A super easy to surf and fun board. The Donny
-                   Stoker is a board for total freesurfing expression. Easy to
-                   ride, care free surfing craft that's fun for everyone,
-                   paddles well, super fast down the line and great for any level
-                   of surfing depending on who rides it.",
-      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever
-                    pro model. A super easy to surf and fun board. The Donny
-                    Stoker is a board for total freesurfing expression. Easy to
-                    ride, care free surfing craft that's fun for everyone,
-                    paddles well, super fast down the line and great for any level
-                    of surfing depending on who rides it.",
+    "desc" : "Imagine riding in an old Cadillac… You know how the old classic cars just seem to glide and almost float along the road? Well, that’s exactly the feel on offer with the Salt Gypsy Dusty Longboard; a more retro style Longboard with rails and some traditional bottom contours to ensure the whole length of the board is usable. ",
+     "features" : "The Huevo, in SLX construction, is a classic hybrid surfboard that incorporates the best of both the shortboard and longboard. It’s round nose and fuller tail gives plenty of floatation and makes paddling a breeze. With its shorter length and 2 + 1 fin set up makes for fast responsive turns and manoeuvrability.",
+      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it.",
       "price" : "$750.00",
 
       "imgs" : {
         "img1" : "assets/img/board3.png",
         "img2" : "assets/img/board3-four.png",
         "img3" : "assets/img/board3-second.png",
-        "img4" : "assets/img/board3-third.png",
+        "img4" : "assets/img/board3-third.png"
       }
   },
   {
+    "id" : 4,
     "title" :  "MODERN HIGHLINE 2018 – PU",
     "stars" : 5,
     "rating" : 19,
-    "desc" : "Easy to ride, care free surfing craft that's fun for everyone,
-              paddles well, super fast down the line and great for any level
-              of surfing depending on who rides it. The Donny Stoker, a rework on
-              design from stokesys first ever pro model. A super easy to surf
-              and fun board. The Donny Stoker is a board for total freesurfing
-              expression.",
-     "features" : "The Donny Stoker, a rework on design from stokesys first ever
-                   pro model. A super easy to surf and fun board. The Donny
-                   Stoker is a board for total freesurfing expression. Easy to
-                   ride, care free surfing craft that's fun for everyone,
-                   paddles well, super fast down the line and great for any level
-                   of surfing depending on who rides it.",
-      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever
-                    pro model. A super easy to surf and fun board. The Donny
-                    Stoker is a board for total freesurfing expression. Easy to
-                    ride, care free surfing craft that's fun for everyone,
-                    paddles well, super fast down the line and great for any level
-                    of surfing depending on who rides it.",
+    "desc" : "Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.",
+     "features" : "The Donny Stoker, a rework on design from stokesys first ever pro model. A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression. Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it.",
+      "dimensions" : "Derived from the more refined Slipstream of the past, the new 7S Jetstream is a true hybrid surfboard, both from a design perspective and by definition of its performance. Now with more volume under the chest for better paddling and overall usability, this ‘Performance All-Rounder’ will adapt to a range of conditions from mushy beach breaks to classic point waves.",
       "price" : "$899.99",
 
       "imgs" : {
         "img1" : "assets/img/board4.png",
         "img2" : "assets/img/board4-four.png",
         "img3" : "assets/img/board4-second.png",
-        "img4" : "assets/img/board4-third.png",
+        "img4" : "assets/img/board4-third.png"
       }
   },
   {
+    "id" : 5,
     "title" :  "THREE PALMS BOARD CO DUE BACK HIGHLINE – MX",
     "stars" : 3,
-    "rating" : 37,
-    "desc" : "Three Palms Due Back surfboards are made using our tough Moulded
-     Epoxy (MX) construction and are designed specifically for the rental
-     market. This model uses the Modern Highline as its base shape. We have
-     an excess of volume to make those early learning stages easy as it will
-      be faster to paddle allowing you to catch the wave earlier. To become
-      a better surfer you need to catch plenty of waves. This board gives you
-       a real shortboard feel.",
-     "features" : "The Donny Stoker, a rework on design from stokesys first ever
-                   pro model. A super easy to surf and fun board. The Donny
-                   Stoker is a board for total freesurfing expression. Easy to
-                   ride, care free surfing craft that's fun for everyone,
-                   paddles well, super fast down the line and great for any level
-                   of surfing depending on who rides it.",
-      "dimensions" : "The Donny Stoker, a rework on design from stokesys first ever
-                    pro model. A super easy to surf and fun board. The Donny
-                    Stoker is a board for total freesurfing expression. Easy to
-                    ride, care free surfing craft that's fun for everyone,
-                    paddles well, super fast down the line and great for any level
-                    of surfing depending on who rides it.",
-      "price" : "$890.00",
+    "rating" : 42,
+    "desc" : "Three Palms Due Back surfboards are made using our tough Moulded Epoxy (MX) construction and are designed specifically for the rental market. This model uses the Modern Highline as its base shape. We have an excess of volume to make those early learning stages easy as it will be faster to paddle allowing you to catch the wave earlier. To become a better surfer you need to catch plenty of waves. This board gives you a real shortboard feel.",
+     "features" : "The Huevo, in SLX construction, is a classic hybrid surfboard that incorporates the best of both the shortboard and longboard. It’s round nose and fuller tail gives plenty of floatation and makes paddling a breeze. With its shorter length and 2 + 1 fin set up makes for fast responsive turns and manoeuvrability.",
+      "dimensions" : "Gnaraloo Beach Cruiser surfboards provide the ultimate in fun and safety for beginner surfers. Theses boards are incredibly buoyant, stable, and easy to ride.",
+      "price" : "$499.99",
 
       "imgs" : {
         "img1" : "assets/img/board5.png",
         "img2" : "assets/img/board5-four.png",
         "img3" : "assets/img/board5-second.png",
-        "img4" : "assets/img/board5-third.png",
+        "img4" : "assets/img/board5-third.png"
       }
   }
 ]
