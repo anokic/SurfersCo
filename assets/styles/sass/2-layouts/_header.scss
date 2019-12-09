@@ -125,19 +125,38 @@ header {
         }
       }
 
+      #wrapper {
+        width: 56%;
+        position: relative;
+
+        .header-content {
+        }
+        #items.shifting {
+          transition: left .3s ease-out;
+        }
+        .items {
+          position: relative;
+          top: 0;
+          width: 10000px;
+
+          .item {
+
+            float: left;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            transition: all 1s;
+            position: relative;
+          }
+        }
+      }
+
     .header-container {
       display: flex;
       justify-content: center;
       width: 100%;
-      .header-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 53%;
-        background: #fff;
-        position: relative;
-        box-shadow: 0px -8px 30px 0px rgba(0, 0, 0, 0.34);
 
+      #wrapper {
         .abstracts {
           position: absolute;
           width: 100%;
@@ -232,9 +251,20 @@ header {
             position: absolute;
             z-index: 0;
             clip-path: polygon(0 0, 0% 100%, 100% 0);
+            z-index: 1;
 
           }
         }
+      }
+      .header-content {
+        background: #fff;
+        position: relative;
+        box-shadow: 0px -8px 30px 0px rgba(0, 0, 0, 0.34);
+        overflow-x: hidden;
+
+
+
+
 
         .header-left {
           width: 55%;
@@ -270,12 +300,12 @@ header {
 
               .img-block:nth-child(1){
                 margin-bottom: 3px;
-                background: url('../../assets/img/board.png') no-repeat left;
+                background: url('../../assets/img/board4.png') no-repeat left;
                 background-size: 140% 150%;
               }
               .img-block:nth-child(2){
                 margin-bottom: 3px;
-                background: url('../../assets/img/board2.png') no-repeat left;
+                background: url('../../assets/img/board-four.png') no-repeat left;
                 background-size: 140% 150%;
               }
               .img-block:nth-child(3){
@@ -296,6 +326,8 @@ header {
           width: 45%;
           height: 100%;
           padding: 44px 50px 50px 0;
+          position: relative;
+          z-index: 3;
 
           .item-heading {
 
@@ -345,16 +377,20 @@ header {
               display: flex;
               border-bottom: 1px solid #D9D9D9;
               li {
+                cursor: pointer;
                 font-size: 0.875rem;
                 padding-bottom: 6px;
                 font-weight: bold;
                 border-bottom: 3px solid transparent;
                 position: relative;
                 top: 1px;
+                color: rgb(160, 160, 160);
+                transition: border .3s ease, color .3s ease;
               }
 
-              li:nth-child(1){
+              .active {
                 border-color: $mainColor;
+                color: #000!important;
               }
 
               li:nth-child(1), li:nth-child(2){
