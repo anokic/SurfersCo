@@ -158,12 +158,17 @@ header {
               display: flex;
               align-items: center;
               justify-content: center;
+              position: relative;
+              z-index: 5;
+
             }
             .arrow-left {
               width: 16px;
               height: 14px;
               background: url('../../assets/img/arrow.png') no-repeat center center;
               background-size: cover;
+              position: relative;
+              z-index: 5;
             }
 
             .arrow-right {
@@ -172,6 +177,23 @@ header {
               background: url('../../assets/img/arrow.png') no-repeat center center;
               background-size: cover;
               transform: rotate(180deg);
+              position: relative;
+              z-index: 5;
+            }
+
+            .arrow-right {
+              transition: all .3s ease;
+
+              &:hover {
+                transform: rotate(180deg) scale(1,.5);
+              }
+            }
+            .arrow-left {
+              transition: all .3s ease;
+
+              &:hover {
+                transform: scale(1,.5);
+              }
             }
           }
           .numbers {
@@ -269,11 +291,11 @@ header {
           width: 45%;
           height: 100%;
           padding: 44px 50px 50px 0;
-          position: relative;
-          z-index: 2;
 
           .item-heading {
 
+            position: relative;
+            z-index: 2;
             h4 {
               font-size: 1.25rem;
               font-family: "Montserrat";
@@ -311,6 +333,8 @@ header {
 
           .item-info {
               margin-top: 42px;
+              position: relative;
+              z-index: 2;
 
             ul {
               display: flex;
@@ -411,6 +435,8 @@ header {
             padding-bottom: 1px;
             font-weight: 600;
             margin-top: 85px;
+            position: relative;
+            z-index: 2;
           }
         }
       }
