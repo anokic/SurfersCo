@@ -2,11 +2,11 @@ window.onload = () => {
 
   /// PRODUCTS ///
 
-  function products(datas){
+  function products(datas) {
 
     let html = ``;
 
-    for(data of datas){
+    for (data of datas) {
 
       html += `<div class="item">
                       <div class="header-left">
@@ -51,11 +51,11 @@ window.onload = () => {
   }
 
 
-  function stars(star){
+  function stars(star) {
     let html = ``;
     let max = 5;
-    for(let i=1;i<=max;i++){
-      if(star < i){
+    for (let i = 1; i <= max; i++) {
+      if (star < i) {
         html += `<div class="no-star"></div>`
       } else {
         html += `<div class="star"></div>`
@@ -66,9 +66,9 @@ window.onload = () => {
 
 
   $.ajax({
-    url : "assets/js/shop.json",
+    url: "assets/js/shop.json",
     type: "GET",
-    success: function (data) {
+    success: function(data) {
       products(data);
 
       $(".item").css({
@@ -76,7 +76,7 @@ window.onload = () => {
       });
 
       $(".items").css({
-        'left': '-'+($(".header-content").width() + 'px')
+        'left': '-' + ($(".header-content").width() + 'px')
       });
 
       slide(slider, sliderItems, prev, next);
@@ -86,40 +86,41 @@ window.onload = () => {
       itemInfo.forEach((item) => {
 
         let items = item.querySelectorAll('li');
-        items.forEach((li)=>{
-          li.addEventListener('click', function(e){
-            clickEvent(e.srcElement,items);
+        items.forEach((li) => {
+          li.addEventListener('click', function(e) {
+            clickEvent(e.srcElement, items);
           }, false);
         })
       })
 
     },
-    error: function (xhr, status, err) {
-        console.log(err);
+    error: function(xhr, status, err) {
+      console.log(err);
     }
 
   })
 
 
 
-  function clickEvent(e,items){
+  function clickEvent(e, items) {
 
     console.log();
 
     $.ajax({
-      url : "assets/js/shop.json",
+      url: "assets/js/shop.json",
       type: "GET",
-      success: function (data) {
-        let dataS = data.filter(p=> p.id == e.dataset.id);
+      success: function(data) {
+        let dataS = data.filter(p => p.id == e.dataset.id);
         $(e).parent().parent().find('.product-paragraph').text(dataS[0][e.dataset.obj]);
         console.log(dataS[0][e.dataset.obj]);
-      }, error: function (status,xhr,err){
+      },
+      error: function(status, xhr, err) {
         console.log(err);
       }
     })
 
-    for(sub of items){
-      if(sub.classList.contains('active')){
+    for (sub of items) {
+      if (sub.classList.contains('active')) {
         sub.classList.remove('active');
       }
     }
@@ -128,10 +129,10 @@ window.onload = () => {
   }
 
 
-  function blueBorder(){
-    for(element of $(this).parent().find('.img-block')){
+  function blueBorder() {
+    for (element of $(this).parent().find('.img-block')) {
 
-      if($(element).hasClass('blue-lagoon')){
+      if ($(element).hasClass('blue-lagoon')) {
         $(element).removeClass('blue-lagoon');
       }
     }
@@ -141,40 +142,40 @@ window.onload = () => {
   }
 
   $(".item").css({
-      'width': ($(".header-content").width() + 'px')
+    'width': ($(".header-content").width() + 'px')
   });
 
   $(".items").css({
-      'left': '-'+($(".header-content").width() + 'px')
+    'left': '-' + ($(".header-content").width() + 'px')
   });
 
   /// MOUSE DRAGGING SLIDER ///
   var slider = document.getElementById('wrapper'),
-      sliderItems = document.getElementById('items'),
-      prev = document.querySelector('.arrow-left-click'),
-      next = document.querySelector('.arrow-right-click');
+    sliderItems = document.getElementById('items'),
+    prev = document.querySelector('.arrow-left-click'),
+    next = document.querySelector('.arrow-right-click');
 
 
 
   function slide(wrapper, items, prev, next) {
     var posX1 = 0,
-        posX2 = 0,
-        posInitial,
-        posFinal,
-        threshold = 100,
-        slides = items.getElementsByClassName('item'),
-        slidesLength = slides.length,
-        slideSize = items.getElementsByClassName('item')[0].offsetWidth,
-        firstSlide = slides[0],
-        lastSlide = slides[slidesLength - 1],
-        cloneFirst = firstSlide.cloneNode(true),
-        cloneLast = lastSlide.cloneNode(true),
-        index = 0,
-        allowShift = true;
+      posX2 = 0,
+      posInitial,
+      posFinal,
+      threshold = 100,
+      slides = items.getElementsByClassName('item'),
+      slidesLength = slides.length,
+      slideSize = items.getElementsByClassName('item')[0].offsetWidth,
+      firstSlide = slides[0],
+      lastSlide = slides[slidesLength - 1],
+      cloneFirst = firstSlide.cloneNode(true),
+      cloneLast = lastSlide.cloneNode(true),
+      index = 0,
+      allowShift = true;
 
 
 
-        document.querySelector('.length').innerHTML = "0" + slidesLength;
+    document.querySelector('.length').innerHTML = "0" + slidesLength;
 
     // Clone first and last slide
     items.appendChild(cloneFirst);
@@ -190,13 +191,17 @@ window.onload = () => {
     items.addEventListener('touchmove', dragAction);
 
     // Click events
-    prev.addEventListener('click', function () { shiftSlide(-1) });
-    next.addEventListener('click', function () { shiftSlide(1) });
+    prev.addEventListener('click', function() {
+      shiftSlide(-1)
+    });
+    next.addEventListener('click', function() {
+      shiftSlide(1)
+    });
 
     // Transition events
     items.addEventListener('transitionend', checkIndex);
 
-    function dragStart (e) {
+    function dragStart(e) {
       e = e || window.event;
       // e.preventDefault();
       posInitial = items.offsetLeft;
@@ -210,7 +215,7 @@ window.onload = () => {
       }
     }
 
-    function dragAction (e) {
+    function dragAction(e) {
       e = e || window.event;
 
       if (e.type == 'touchmove') {
@@ -223,7 +228,7 @@ window.onload = () => {
       items.style.left = (items.offsetLeft - posX2) + "px";
     }
 
-    function dragEnd (e) {
+    function dragEnd(e) {
       posFinal = items.offsetLeft;
       if (posFinal - posInitial < -threshold) {
         shiftSlide(1, 'drag');
@@ -241,7 +246,9 @@ window.onload = () => {
       items.classList.add('shifting');
 
       if (allowShift) {
-        if (!action) { posInitial = items.offsetLeft; }
+        if (!action) {
+          posInitial = items.offsetLeft;
+        }
 
         if (dir == 1) {
           items.style.left = (posInitial - slideSize) + "px";
@@ -252,19 +259,19 @@ window.onload = () => {
         }
       };
 
-      document.querySelector('.count').innerHTML = '0' + (index+1);
+      document.querySelector('.count').innerHTML = '0' + (index + 1);
 
-      if(index == 5){
+      if (index == 5) {
         document.querySelector('.count').innerHTML = '01';
       }
-      if(index == -1){
+      if (index == -1) {
         document.querySelector('.count').innerHTML = '05';
       }
 
       allowShift = false;
     }
 
-    function checkIndex (){
+    function checkIndex() {
       items.classList.remove('shifting');
 
       if (index == -1) {
