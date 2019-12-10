@@ -137,7 +137,7 @@ header {
         .items {
           position: relative;
           top: 0;
-          width: 10000px;
+          width: 20000px;
 
           .item {
 
@@ -253,6 +253,20 @@ header {
             clip-path: polygon(0 0, 0% 100%, 100% 0);
             z-index: 1;
 
+          }
+
+          .boards-text {
+            font-size: 144px;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.031);
+            position: absolute;
+            z-index: 1;
+            right: -275px;
+            bottom: 250px;
+            transform: rotate(-90deg);
+            h5 {
+
+            }
           }
         }
       }

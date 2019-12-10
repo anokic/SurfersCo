@@ -83,5 +83,39 @@
         "img3" : "assets/img/board5-second.png",
         "img4" : "assets/img/board5-third.png"
       }
+  },
+  {
+    "id" : 5,
+    "title" :  "THREE PALMS BOARD CO DUE BACK HIGHLINE – MX",
+    "stars" : 2,
+    "rating" : 12,
+    "desc" : "Three Palms Due Back surfboards are made using our tough Moulded Epoxy (MX) construction and are designed specifically for the rental market. This model uses the Modern Highline as its base shape. We have an excess of volume to make those early learning stages easy as it will be faster to paddle allowing you to catch the wave earlier. To become a better surfer you need to catch plenty of waves. This board gives you a real shortboard feel.",
+     "features" : "The Huevo, in SLX construction, is a classic hybrid surfboard that incorporates the best of both the shortboard and longboard. It’s round nose and fuller tail gives plenty of floatation and makes paddling a breeze. With its shorter length and 2 + 1 fin set up makes for fast responsive turns and manoeuvrability.",
+      "dimensions" : "Gnaraloo Beach Cruiser surfboards provide the ultimate in fun and safety for beginner surfers. Theses boards are incredibly buoyant, stable, and easy to ride.",
+      "price" : "$399.99",
+
+      "imgs" : {
+        "img1" : "assets/img/board2-second.png",
+        "img2" : "assets/img/board2-four.png",
+        "img3" : "assets/img/board2.png",
+        "img4" : "assets/img/board2-third.png"
+      }
+  },
+  {
+    "id" : 5,
+    "title" :  "THREE PALMS BOARD CO DUE BACK HIGHLINE – MX",
+    "stars" : 1,
+    "rating" : 4,
+    "desc" : "Three Palms Due Back surfboards are made using our tough Moulded Epoxy (MX) construction and are designed specifically for the rental market. This model uses the Modern Highline as its base shape. We have an excess of volume to make those early learning stages easy as it will be faster to paddle allowing you to catch the wave earlier. To become a better surfer you need to catch plenty of waves. This board gives you a real shortboard feel.",
+     "features" : "The Huevo, in SLX construction, is a classic hybrid surfboard that incorporates the best of both the shortboard and longboard. It’s round nose and fuller tail gives plenty of floatation and makes paddling a breeze. With its shorter length and 2 + 1 fin set up makes for fast responsive turns and manoeuvrability.",
+      "dimensions" : "Gnaraloo Beach Cruiser surfboards provide the ultimate in fun and safety for beginner surfers. Theses boards are incredibly buoyant, stable, and easy to ride.",
+      "price" : "$599.99",
+
+      "imgs" : {
+        "img1" : "assets/img/board3-four.png",
+        "img2" : "assets/img/board3.png",
+        "img3" : "assets/img/board3-third.png",
+        "img4" : "assets/img/board3-second.png"
+      }
   }
 ]

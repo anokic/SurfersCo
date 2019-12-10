@@ -128,6 +128,7 @@ window.onload = () => {
     e.classList.add('active');
   }
 
+  /// PRODUCT IMAGE SHOW IMAGE // BLUE BORDER FOR SELECTED IMAGE
 
   function blueBorder() {
     for (element of $(this).parent().find('.img-block')) {
@@ -141,13 +142,29 @@ window.onload = () => {
     $(this).addClass('blue-lagoon');
   }
 
-  $(".item").css({
-    'width': ($(".header-content").width() + 'px')
-  });
+  // END
 
-  $(".items").css({
-    'left': '-' + ($(".header-content").width() + 'px')
-  });
+  // styling with jquery
+
+  function stylingProductWidth(){
+    $(".item").css({
+      'width': ($(".header-content").width() + 'px')
+    });
+
+    $(".items").css({
+      'left': '-' + ($(".header-content").width() + 'px')
+    });
+
+
+  }
+
+  stylingProductWidth();
+
+  $(window).resize(()=> {
+    stylingProductWidth();
+  })
+
+  /// SLIDER SHOP START
 
   /// MOUSE DRAGGING SLIDER ///
   var slider = document.getElementById('wrapper'),
@@ -260,12 +277,11 @@ window.onload = () => {
       };
 
       document.querySelector('.count').innerHTML = '0' + (index + 1);
-
-      if (index == 5) {
+      if (index == slidesLength) {
         document.querySelector('.count').innerHTML = '01';
       }
       if (index == -1) {
-        document.querySelector('.count').innerHTML = '05';
+        document.querySelector('.count').innerHTML = '0' + slidesLength;
       }
 
       allowShift = false;
@@ -287,5 +303,7 @@ window.onload = () => {
       allowShift = true;
     }
   }
+
+  ////// SLIDER END //////
 
 }
