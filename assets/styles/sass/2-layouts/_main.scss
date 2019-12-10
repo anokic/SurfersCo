@@ -1,0 +1,62 @@
+main {
+
+  .about-us {
+
+    .about {
+      .background-cut {
+        background: url('../../assets/img/aboutBackground.png') no-repeat center center;
+        background-size: cover;
+        min-height: 702px;
+        clip-path: polygon(50% 0%, 100% 0, 100% 100%, 46% 100%, 46% 46%, 0 46%, 0 1%);
+      }
+
+      .about-content {
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -100px;
+        .about-text {
+          width: 18%;
+          position: relative;
+          top: -140px;
+          height: 400px;
+          h4 {
+            font-size: 1.125rem;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            margin-bottom: 58px;
+
+            &::before {
+              content: '';
+              width: 13px;
+              height: 13px;
+              position: absolute;
+              top: 40px;
+              left: 50%;
+              transform: translateX(-50%);
+              background: url('../../assets/img/x-icon.png') no-repeat center center;
+              background-size: 100% 100%;
+            }
+          }
+
+          p {
+            font-size: 1.375rem;
+            font-family: 'Playfair Display';
+            font-style: italic;
+            line-height: 1.727;
+            margin-bottom: 34px;
+          }
+
+          a {
+            color: $mainColor;
+            text-decoration: none;
+            border-bottom: 2px solid $mainColor;
+            padding-bottom: 1px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
