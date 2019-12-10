@@ -168,7 +168,7 @@ header {
             height: 38px;
             background: #F2D800;
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             right: -39px;
             top: 50px;
             .arrow {
@@ -232,7 +232,7 @@ header {
             font-family: 'Montserrat';
             font-weight: 500;
             position: absolute;
-            z-index: 1;
+            z-index: 2;
             right: 0;
             top: 88px;
             .count {
@@ -261,8 +261,8 @@ header {
             color: rgba(0, 0, 0, 0.031);
             position: absolute;
             z-index: 1;
-            right: -275px;
-            bottom: 250px;
+            right: -277px;
+            bottom: 245px;
             transform: rotate(-90deg);
             h5 {
 
