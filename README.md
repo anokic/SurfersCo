@@ -22,4 +22,8 @@ Video has custom controls made with JavaScript. Double click fullscreen. Click p
 
 Slider is draggable with mouse or touch screen and is dynamically made.
 
+Image of what I have done so far:
+
+![Website image](https://i.ibb.co/QCxbXqr/screencapture-127-0-0-1-3000-2019-12-11-19-37-45.png)
+
 **Designed by Luis Costa: https://www.dropbox.com/s/maquut3euef51w3/Surfers%20Co%20Free%20PSD%20Template.rar?dl=0**
