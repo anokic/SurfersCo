@@ -18,6 +18,8 @@ What I done:
 &nbsp; &nbsp;<br/> d) **SASS** watch
 5. **PHOTOSHOP**
 
+Video has custom controls made with JavaScript. Double click fullscreen. Click pause/play.
+
 Slider is draggable with mouse or touch screen and is dynamically made.
 
 **Designed by Luis Costa: https://www.dropbox.com/s/maquut3euef51w3/Surfers%20Co%20Free%20PSD%20Template.rar?dl=0**
