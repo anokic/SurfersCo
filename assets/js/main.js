@@ -103,16 +103,12 @@ window.onload = () => {
 
 
   function clickEvent(e, items) {
-
-    console.log();
-
     $.ajax({
       url: "assets/js/shop.json",
       type: "GET",
       success: function(data) {
         let dataS = data.filter(p => p.id == e.dataset.id);
         $(e).parent().parent().find('.product-paragraph').text(dataS[0][e.dataset.obj]);
-        console.log(dataS[0][e.dataset.obj]);
       },
       error: function(status, xhr, err) {
         console.log(err);
@@ -124,7 +120,6 @@ window.onload = () => {
         sub.classList.remove('active');
       }
     }
-    // console.log(e);
     e.classList.add('active');
   }
 
@@ -154,12 +149,11 @@ window.onload = () => {
     $(".items").css({
       'left': '-' + ($(".header-content").width() + 'px')
     });
-
-
   }
 
   stylingProductWidth();
 
+  // Apply style while resizing the window
   $(window).resize(()=> {
     stylingProductWidth();
   })
@@ -305,5 +299,46 @@ window.onload = () => {
   }
 
   ////// SLIDER END //////
+
+
+  ///// VIDEO CONTROLS //////
+
+  const video = document.querySelector('.video');
+  const controls = document.querySelector('.play-container');
+  video.addEventListener('click', play);
+  video.addEventListener('dblclick', openFullscreen);
+
+  function playOrPause(that){
+    if(that.querySelector('.control').querySelector('.play-container').classList.contains('fade')){
+      that.querySelector('.video-file').pause();
+      controls.classList.remove('fade');
+    } else if(!that.querySelector('.control').querySelector('.play-container').classList.contains('fade')) {
+      that.querySelector('.video-file').play();
+      controls.classList.add('fade');
+    }
+  }
+
+    function play(){
+
+        if(!this.querySelector('.video-file').fullscreenElement || !this.querySelector('.video-file').webkitFullscreenElement || !this.querySelector('.video-file').mozFullScreenElement || !this.querySelector('.video-file').msFullscreenElement){
+            playOrPause(this);
+           }
+    }
+
+
+  function openFullscreen() {
+    if (this.requestFullscreen) {
+      this.querySelector('.video-file').requestFullscreen();
+    } else if (this.querySelector('.video-file').mozRequestFullScreen) { /* Firefox */
+      this.querySelector('.video-file').mozRequestFullScreen();
+    } else if (this.querySelector('.video-file').webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+      this.querySelector('.video-file').webkitRequestFullscreen();
+    } else if (this.querySelector('.video-file').msRequestFullscreen) { /* IE/Edge */
+      this.querySelector('.video-file').msRequestFullscreen();
+    }
+
+    playOrPause(this);
+  }
+
 
 }
