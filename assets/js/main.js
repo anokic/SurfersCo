@@ -305,6 +305,9 @@ window.onload = () => {
 
   const video = document.querySelector('.video');
   const controls = document.querySelector('.play-container');
+
+  /// EVENTS ///
+
   video.addEventListener('click', play);
   video.addEventListener('dblclick', openFullscreen);
 
@@ -319,10 +322,7 @@ window.onload = () => {
   }
 
     function play(){
-
-        if(!this.querySelector('.video-file').fullscreenElement || !this.querySelector('.video-file').webkitFullscreenElement || !this.querySelector('.video-file').mozFullScreenElement || !this.querySelector('.video-file').msFullscreenElement){
             playOrPause(this);
-           }
     }
 
 
@@ -339,6 +339,8 @@ window.onload = () => {
 
     playOrPause(this);
   }
+
+    ///// VIDEO ENDING //////
 
 
 }

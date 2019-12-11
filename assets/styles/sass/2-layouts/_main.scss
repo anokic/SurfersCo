@@ -1,10 +1,19 @@
 main {
-
   .about-us {
-
     .about {
+      position: relative;
+      h2 {
+        position: absolute;
+        top: -150px;
+        font-size: 12.25rem;
+        color: rgba(0, 0, 0, 0.031);
+        font-weight: bold;
+        letter-spacing: 20px;
+        width: 100%;
+        text-align: center;
+      }
       .background-cut {
-        background: url('../../assets/img/aboutBackground.png') no-repeat center center;
+        background:linear-gradient(rgba(127,127,127,0), rgba(127,127,127,0.3)), url('../../assets/img/aboutBackground.png') no-repeat center center;
         background-size: cover;
         min-height: 702px;
         clip-path: polygon(50% 0%, 100% 0, 100% 100%, 46% 100%, 46% 46%, 0 46%, 0 1%);
@@ -16,11 +25,10 @@ main {
         position: relative;
         top: -100px;
         .about-text {
-
           margin-right: 200px;
           width: 18%;
           position: relative;
-          top: -140px;
+          top: -192px;
           height: 400px;
           h4 {
             font-size: 1.125rem;
@@ -64,10 +72,20 @@ main {
           position: relative;
           height: fit-content;
           z-index: 1;
+
+          &:active {
+            .control {
+              .play-container {
+                transform: translate(-50%,-50%) scale(.9);
+              }
+            }
+          }
+
           video {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            box-shadow: 20px 34.641px 50px 0px rgba(0, 0, 0, 0.2);
           }
 
           .control {
@@ -86,8 +104,9 @@ main {
               position: absolute;
               top: 50%;
               left: 50%;
-              transform: translate(-50%,-50%);
+              transform: translate(-50%,-50%) scale(1);
               z-index: 2;
+              transition: opacity .3s ease-in-out, transform .3s ease-in-out;
 
               svg {
                 position: absolute;
