@@ -4,7 +4,7 @@
 
 Found a beautiful design and wanted to recreate it in exact and event better way then on **PSD**
 
-It's pure fun not used in any commercial or profit way. It's practice while doing making a beautiful design.
+It's pure fun not used in any commercial or profit way. It's practice while making a beautiful design.
 
 What I done:
 

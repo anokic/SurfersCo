@@ -341,7 +341,6 @@ window.onload = () => {
 
     ///// VIDEO ENDING //////
 
-
     /// TEAM SLIDER ///
 
     let slider_team = document.querySelector('.slider');
