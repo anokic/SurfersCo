@@ -325,7 +325,6 @@ window.onload = () => {
             playOrPause(this);
     }
 
-
   function openFullscreen() {
     if (this.requestFullscreen) {
       this.querySelector('.video-file').requestFullscreen();
@@ -341,6 +340,54 @@ window.onload = () => {
   }
 
     ///// VIDEO ENDING //////
+
+
+    /// TEAM SLIDER ///
+
+    let slider_team = document.querySelector('.slider');
+    let member = document.querySelectorAll('.member');
+    let memeberWidth = document.querySelector('.member').offsetWidth;
+    let left = document.querySelector('.left-arrow-block');
+    let right = document.querySelector('.right-arrow-block');
+    var jump_treshold = 260;
+    var elem_count = 3;
+    var counter = 1;
+    var place = 0;
+    var left_distance = 360;
+
+    console.log(slider_team.style.left);
+
+    right.addEventListener('click', ()=>{
+
+        if(place < 2){
+          member[place].style.margin = '0 240px 0 0';
+          member[elem_count].style.margin = '0 -10px 0 -10px';
+          if(place > 0){
+            member[place - 1].style.margin = '0 0 0 0';
+          }
+          place++; counter--; elem_count++;
+          slider_team.style.left = (jump_treshold * counter) + 'px';
+          member[elem_count].style.margin = '0 240px 0 -10px';
+
+          left_distance = parseInt(slider_team.style.left);
+        }
+    })
+
+    6
+
+    left.addEventListener('click', ()=>{
+
+        if(place != 0){
+          counter++;
+          slider_team.style.left = (jump_treshold * counter) + 'px';
+          member[elem_count].style.margin = '0 -10px 0 -10px';
+          place--;  elem_count--;
+          member[place + 1].style.margin = '0 -10px 0 -10px';
+          member[elem_count].style.margin = '0 240px 0 -10px';
+          member[place].style.margin = '0 -10px 0 240px';
+          left_distance = parseInt(slider_team.style.left);
+        }
+    })
 
 
 }
