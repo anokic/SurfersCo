@@ -4,7 +4,7 @@ footer {
   justify-content: center;
 
   .footer-background {
-    background: pink;
+    background: #000;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -67,17 +67,98 @@ footer {
         align-items: center;
         padding: 20px;
 
-        img {
-
-        }
-
         h4 {
-
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: $mainColor;
+          margin: 0 18px 0 19px;
         }
 
         span {
-
+          font-weight: 500;
+          font-family: "Raleway";
         }
+      }
+    }
+
+    .left-side-bot {
+      margin-top: 27px;
+
+      .content {
+
+        span {
+          font-size: 0.75rem;
+          color: rgb(77, 77, 77);
+          font-family: "Raleway";
+          font-weight: bold;
+        }
+
+        span:nth-child(1){
+          margin-right: 20px;
+          position: relative;
+          &::before {
+            content: '';
+            border-radius: 50%;
+            background-color: rgb(77, 77, 77);
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -15px;
+          }
+        }
+      }
+    }
+  }
+
+  .right-side {
+    margin-left: 50px;
+
+    .facebook {
+      display: flex;
+      flex-direction: column;
+      width: 440px;
+      height: 348px;
+      position: relative;
+      padding: 94px 0 41px 0;
+
+      .face-page {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('../../assets/img/face-page.png') no-repeat center center;
+        background-size: 100% 100%;
+        width: 80%;
+        height: 100%;
+      }
+
+      .background-top {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: #385490;
+        top: 0;
+
+        .facebook-logo {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 31px;
+          background: url('../../assets/img/facebook-logo.png') no-repeat center center;
+          background-size: 100% 100%;
+          width: 153px;
+          height: 32px;
+        }
+      }
+
+      .background-bot {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        background: #e5e5e5;
+        bottom: 0;
       }
     }
   }
