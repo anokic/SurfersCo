@@ -437,52 +437,7 @@ header {
                 margin-right: 30px;
               }
 
-              .blue-button {
-                width: 137px;
-                height: 44px;
-                background: $mainColor;
-                color: #fff;
-                font-size: 0.875rem;
-                font-weight: bold;
-                overflow: hidden;
-                position: relative;
-                border: 2px solid transparent;
-                transition: all 0.6s;
 
-                span {
-                  position: relative;
-                  z-index: 2;
-                }
-
-                &::after {
-                  background: #fff;
-                  content: '';
-                  position: absolute;
-                  z-index: 1;
-                  height: 100%;
-                  left: -39%;
-                  top: 0;
-                  transform: skew(50deg);
-                  transition-duration: 0.6s;
-                  transform-origin: top left;
-                  width: 0;
-                  transition: all 0.6s;
-                }
-
-                &:hover:after {
-                  height: 100%!important;
-                  width: 140%!important;
-                }
-
-                &:hover {
-                  color: $mainColor;
-                  border-color: $mainColor;
-                }
-
-                &:active {
-                  transform: scale(.95);
-                }
-              }
             }
           }
 
