@@ -114,6 +114,7 @@ footer {
   }
 
   .right-side {
+    margin-top: 58px;
     margin-left: 50px;
 
     .facebook {
@@ -123,6 +124,7 @@ footer {
       height: 348px;
       position: relative;
       padding: 94px 0 41px 0;
+      margin-bottom: 100px;
 
       .face-page {
         position: relative;
@@ -159,6 +161,34 @@ footer {
         height: 50%;
         background: #e5e5e5;
         bottom: 0;
+      }
+    }
+
+    nav {
+      display: flex;
+      margin-left: 28px;
+      ul:nth-child(1){
+        margin-right: 96px;
+      }
+
+      ul {
+        li {
+          color: #fff;
+          margin-bottom: 23px;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 19px;
+            height: 6px;
+            background: url('../../assets/img/waves-footer.png') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -28px;
+          }
+        }
       }
     }
   }
