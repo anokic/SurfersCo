@@ -22,7 +22,7 @@ Video has custom controls made with JavaScript. Double click fullscreen. Click p
 
 Slider is draggable with mouse or touch screen and is dynamically made.
 
-Desktop version is up and running. Next compatibility with other resolutions.
+Desktop version is up and running. Next, compatibility with other resolutions.
 
 ![Website image](https://i.ibb.co/QF28JGc/screencapture-127-0-0-1-3000-2019-12-17-18-20-55.png)
 
