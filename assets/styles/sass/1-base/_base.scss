@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat";
 }
@@ -20,7 +24,7 @@ button {
   height: 44px;
   background: $mainColor;
   color: #fff;
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: bold;
   overflow: hidden;
   position: relative;
@@ -60,5 +64,12 @@ button {
 
   &:active {
     transform: scale(.95);
+  }
+}
+
+
+@media only screen and (max-width:1200px){
+  html {
+    font-size: 14px;
   }
 }

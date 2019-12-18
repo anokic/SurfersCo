@@ -123,6 +123,7 @@ header {
         position: relative;
 
         .header-content {
+          touch-action: none;
         }
         #items.shifting {
           transition: left .3s ease-out;
@@ -471,5 +472,64 @@ header {
   #wrapper {
     width: 1106px!important;
     height: 635px!important;
+  }
+}
+
+@media only screen and (max-width: 1380px){
+  .top-header {
+    padding: 32px 14% 0!important;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  #wrapper {
+    width: 806px!important;
+    height: 515px!important;
+  }
+
+  header {
+    margin-bottom: 1050px!important;
+  }
+
+  .header-content {
+    height: 100%;
+  }
+
+  .board {
+    width: 70%;
+  }
+
+  .img-block {
+    width: 50px!important;
+    height: 50px!important;
+  }
+
+  .header-right {
+    padding-bottom: 10px!important;
+    a {
+      margin-top: 40px!important;
+    }
+  }
+}
+@media only screen and (max-width: 1150px){
+  .top-header {
+    padding: 32px 10% 0!important;
+  }
+
+  // #wrapper {
+  //   width: 1106px!important;
+  //   height: 635px!important;
+  // }
+}
+
+@media only screen and (max-width: 1000px){
+  .top-header {
+    padding: 32px 10px 0!important;
+  }
+}
+
+@media only screen and (max-width: 900px){
+  .top-header {
+    padding: 32px 10px 0!important;
   }
 }
