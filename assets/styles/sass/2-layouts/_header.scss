@@ -291,6 +291,8 @@ header {
               display: flex;
               flex-direction: column;
               justify-content: center;
+              margin-left:auto;
+              margin-right: 65px;
 
               .blue-lagoon {
                   border-width: 3px!important;
@@ -455,5 +457,19 @@ header {
         }
       }
     }
+  }
+}
+
+@media only screen and (min-width: 2000px){
+  #wrapper {
+    width: 1106px!important;
+    height: 635px!important;
+  }
+}
+
+@media only screen and (max-width: 1800px){
+  #wrapper {
+    width: 1106px!important;
+    height: 635px!important;
   }
 }
