@@ -529,6 +529,11 @@ header {
 }
 
 @media only screen and (max-width: 900px){
+
+  .about h2 {
+    top: -100px!important;
+    font-size: 136px!important;
+  }
   .rating {
     margin-top: 10px!important;
   }
@@ -558,4 +563,10 @@ header {
   .header-right a {
     margin-top: 20px!important;
   }
+}
+
+@media only screen and (max-width: 800px){
+    .header-container {
+          transform: scale(.85);
+    }
 }
