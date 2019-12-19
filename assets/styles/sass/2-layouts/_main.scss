@@ -505,4 +505,23 @@ main {
       padding-right: 0!important;
     }
   }
+
+  .left-side {
+    width: 90%!important;
+  }
+
+  .left-side-top h2 {
+    font-size: 78.7px!important;
+  }
+}
+
+@media only screen and (max-width: 410px){
+  .right-side {
+    margin-left: 0!important;
+  }
+
+  .news {
+    width: 100%!important;
+  }
+
 }

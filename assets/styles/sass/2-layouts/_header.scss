@@ -11,6 +11,67 @@ header {
       font-family: "Montserrat";
       padding: 32px 18.5% 0;
 
+      .hamburger {
+        width: 35px;
+        height: 24px;
+        position: relative;
+
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          width: 35px;
+          height: 4px;
+          background: #000;
+          border-radius: 10px;
+          transition: .3s ease;
+        }
+
+        &::before {
+          top: 0;
+          left: 0;
+
+        }
+
+        &::after {
+          bottom: 0;
+          right: 0;
+        }
+
+        .line {
+          pointer-events: none;
+          &::before, &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background: #000;
+            border-radius: 10px;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: .3s ease;
+          }
+        }
+      }
+
+      .hamburger-open {
+        &::before, &::after {
+          width: 0!important;
+        }
+      }
+
+      .hamburger-end {
+        .line {
+          &::before {
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
       .logo {
         a {
           color: #000;
@@ -23,7 +84,15 @@ header {
         }
       }
 
+      .navi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
       nav {
+
+        margin-right: 20px!important;
         ul {
             display: flex;
           li {
@@ -483,6 +552,13 @@ header {
   }
 }
 
+@media only screen and (max-width: 1220px){
+
+  .top-header {
+   padding: 32px 12% 0!important;
+  }
+}
+
 @media only screen and (max-width: 1200px){
   #wrapper {
     width: 806px!important;
@@ -517,14 +593,19 @@ header {
   .top-header {
     padding: 32px 10% 0!important;
   }
-
-  // #wrapper {
-  //   width: 1106px!important;
-  //   height: 635px!important;
-  // }
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1100px){
+  .hamburger {
+    display: block;
+  }
+
+  .navi {
+    display: none!important;
+  }
+}
+
+@media only screen and (max-width: 1010px){
   .top-header {
     padding: 32px 10px 0!important;
   }

@@ -1,9 +1,30 @@
 window.onload = () => {
 
 
-  /// LOADING
+  /// NAVI
+
+    document.querySelector('.hamburger').addEventListener('click', (e) => {
+
+      if(e.target.classList.contains('hamburger-open')){        
+        e.target.classList.toggle('hamburger-end');
+
+        setTimeout(()=>{
+          e.target.classList.toggle('hamburger-open');
+        }, 300);
+      } else {
+        e.target.classList.toggle('hamburger-open');
+
+        setTimeout(()=>{
+          e.target.classList.toggle('hamburger-end');
+        }, 300);
+      }
 
 
+    })
+
+
+
+  ///
 
   /// PRODUCTS ///
 
