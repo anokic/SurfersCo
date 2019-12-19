@@ -598,6 +598,9 @@ header {
 }
 
 @media only screen and (max-width: 1100px){
+  header .top-header {
+    padding-top: 20px!important;
+  }
   .hamburger {
     display: block!important;
     z-index: 12;
@@ -610,6 +613,21 @@ header {
 
   .social {
     background: $mainColor!important;
+  }
+
+  .top-header-anim {
+
+    .logo {
+      position: fixed!important;
+      top:20px;
+      left: 10%;
+    }
+
+    .hamburger {
+      position: fixed!important;
+      top: 20px;
+      right: 10%;
+    }
   }
 
   .naviAnim {
@@ -646,7 +664,8 @@ header {
     }
     nav {
       margin-right: 0!important;
-      margin-bottom: 40px;
+      margin-left: 0!important;
+      margin-bottom: 40px!important;
       opacity: 0;
       transition: .3s ease;
 
@@ -669,6 +688,16 @@ header {
 @media only screen and (max-width: 1010px){
   .top-header {
     padding: 32px 10px 0!important;
+  }
+  .top-header-anim {
+
+    .logo {
+      left: 10px!important;
+    }
+
+    .hamburger {
+      right: 10px!important;
+    }
   }
 }
 

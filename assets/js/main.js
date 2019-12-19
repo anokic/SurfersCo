@@ -6,12 +6,14 @@ window.onload = () => {
     document.querySelector('.hamburger').addEventListener('click', (e) => {
 
       if(e.target.classList.contains('hamburger-open')){
+        e.target.parentNode.classList.toggle('top-header-anim');
         e.target.classList.toggle('hamburger-end');
         document.querySelector('.navi').classList.toggle('naviAnim');
         setTimeout(()=>{
           e.target.classList.toggle('hamburger-open');
         }, 300);
       } else {
+        e.target.parentNode.classList.toggle('top-header-anim');
         document.querySelector('.navi').classList.toggle('naviAnim');
         e.target.classList.toggle('hamburger-open');
         setTimeout(()=>{
