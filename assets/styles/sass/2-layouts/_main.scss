@@ -468,6 +468,36 @@ main {
   }
 }
 
+@media only screen and (max-width: 700px){
+  .left-side-top h2 {
+    font-size: 70px!important;
+    top: -55px!important;
+  }
+
+  .facebook {
+    display: none!important;
+  }
+  footer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .right-side {
+    padding-bottom: 40px!important;
+  }
+
+  .left-side, .right-side {
+    width: 70%!important;
+  }
+
+  nav {
+    margin-bottom: 40px!important;
+  }
+
+  .left-side {
+    padding-bottom: 0!important;
+  }
+}
 @media only screen and (max-width: 560px){
   .update {
     p {
