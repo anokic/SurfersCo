@@ -444,6 +444,13 @@ main {
   }
 }
 
+@media only screen and (max-width: 1300px){
+  .absolute h2 {
+    font-size: 136px!important;
+    top: 30px!important;
+  }
+}
+
 @media only screen and (max-width: 1200px){
   .updates-container {
     padding: 0 10px!important;
@@ -468,7 +475,47 @@ main {
   }
 }
 
+@media only screen and (max-width: 1000px){
+  .absolute h2 {
+    font-size: 96px!important;
+    top: 60px!important;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .absolute h2 {
+    font-size: 66px!important;
+    top: 80px!important;
+  }
+}
+
 @media only screen and (max-width: 700px){
+  .team {
+    top: -160px!important;
+        margin-bottom: 90px!important;
+  }
+  .about h2 {
+      top: -50px!important;
+      font-size: 66px!important;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+
+    .video {
+      top: -150px!important;
+      width: 90%!important;
+      margin: 0 auto!important;
+    }
+
+    .about-text {
+      width: 70%!important;
+      top: -90px!important;
+      margin: 0 auto!important;
+      height: 270px!important;
+    }
+  }
+
   .left-side-top h2 {
     font-size: 70px!important;
     top: -55px!important;
