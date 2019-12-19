@@ -5,15 +5,15 @@ window.onload = () => {
 
     document.querySelector('.hamburger').addEventListener('click', (e) => {
 
-      if(e.target.classList.contains('hamburger-open')){        
+      if(e.target.classList.contains('hamburger-open')){
         e.target.classList.toggle('hamburger-end');
-
+        document.querySelector('.navi').classList.toggle('naviAnim');
         setTimeout(()=>{
           e.target.classList.toggle('hamburger-open');
         }, 300);
       } else {
+        document.querySelector('.navi').classList.toggle('naviAnim');
         e.target.classList.toggle('hamburger-open');
-
         setTimeout(()=>{
           e.target.classList.toggle('hamburger-end');
         }, 300);
