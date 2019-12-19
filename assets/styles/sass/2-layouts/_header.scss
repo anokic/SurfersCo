@@ -124,6 +124,8 @@ header {
 
         .header-content {
           touch-action: none;
+          height: 100%;
+          overflow: hidden;
         }
         #items.shifting {
           transition: left .3s ease-out;
@@ -488,7 +490,7 @@ header {
   }
 
   header {
-    margin-bottom: 1050px!important;
+    margin-bottom: 450px!important;
   }
 
   .header-content {

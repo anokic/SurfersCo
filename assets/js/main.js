@@ -1,5 +1,10 @@
 window.onload = () => {
 
+
+  /// LOADING
+
+
+
   /// PRODUCTS ///
 
   function products(datas) {
@@ -348,7 +353,7 @@ window.onload = () => {
     let memeberWidth = document.querySelector('.member').offsetWidth;
     let left = document.querySelector('.left-arrow-block');
     let right = document.querySelector('.right-arrow-block');
-    var jump_treshold = 280;
+    var jump_treshold = window.innerWidth > 1200 ? 280 : 200;
     var elem_count = 3;
     var counter = 1;
     var place = 0;

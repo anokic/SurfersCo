@@ -154,6 +154,7 @@ main {
           justify-content: center;
           align-items: center;
           transition: transform .3s ease-in-out;
+          z-index: 10;
 
           &:active {
             transform: translateY(-50%) scale(.90);
@@ -339,7 +340,7 @@ main {
     .updates-container {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: baseline;
         .update {
           width: 14%;
           box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
@@ -378,6 +379,100 @@ main {
       margin-left: auto;
       width: 197px;
       height: 44px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1900px){
+  .slider-team {
+    width: 80%!important;
+  }
+}
+@media only screen and (max-width: 1700px){
+  .about-content {
+    justify-content: space-around!important;
+  }
+  .video {
+    width: 36%!important;
+  }
+
+  .about-text {
+    width: 22%!important;
+    margin-right: 0!important;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  .video {
+    width: 44%!important;
+    top: -10px!important;
+  }
+
+  .about-text {
+    width: 40%!important;
+    top: -172px!important;
+  }
+
+  .slider-team {
+    width: 100%!important;
+  }
+
+  .right-arrow-block {
+    right: 5%!important;
+  }
+  .left-arrow-block {
+    left: 5%!important;
+  }
+
+  .member {
+    width: 200px!important;
+    height: 248px!important;
+  }
+
+  .top-member {
+    width: 40%!important;
+    figure {
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  main .about-us .team .slider-team .slider {
+    left: 400px;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+  .updates-container {
+    padding: 0 10px!important;
+  }
+  .update {
+    width: 30%!important;
+  }
+}
+
+@media only screen and (max-width: 1100px){
+  .left-side {
+    width: 40%!important;
+  }
+
+  .right-side {
+    width: 40%!important;
+
+    .facebook {
+      max-width: 100%!important;
+      height: 280px!important;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px){
+  .update {
+    p {
+      padding-left: 0!important;
+      padding-right: 0!important;
     }
   }
 }
