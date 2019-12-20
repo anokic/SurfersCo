@@ -490,6 +490,22 @@ main {
 }
 
 @media only screen and (max-width: 700px){
+  .member:nth-child(5) {
+    margin: 0!important;
+  }
+
+  html main .about-us .team .slider-team .slider {
+    left: 500px;
+  }
+
+  main .about-us .team .slider-team .member:nth-child(2) {
+    margin-right: 200px;
+  }
+
+  .about-content .about-text {
+    top: -60px!important;
+  }
+
   .team {
     top: -160px!important;
         margin-bottom: 90px!important;
@@ -545,6 +561,14 @@ main {
     padding-bottom: 0!important;
   }
 }
+
+@media only screen and (max-width: 600px){
+
+  html main .about-us .team .slider-team .slider {
+    left: 470px;
+  }
+}
+
 @media only screen and (max-width: 560px){
   .update {
     p {
@@ -559,6 +583,18 @@ main {
 
   .left-side-top h2 {
     font-size: 78.7px!important;
+  }
+}
+
+@media only screen and (max-width: 450px){
+
+  .member {
+      width: 150px!important;
+      height: 200px!important;
+  }
+
+  html main .about-us .team .slider-team .slider {
+    left: 370px;
   }
 }
 

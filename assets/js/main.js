@@ -5,16 +5,20 @@ window.onload = () => {
 
     document.querySelector('.hamburger').addEventListener('click', (e) => {
 
+      let navi = document.querySelector('.navi');
+
       if(e.target.classList.contains('hamburger-open')){
         e.target.parentNode.classList.toggle('top-header-anim');
         e.target.classList.toggle('hamburger-end');
-        document.querySelector('.navi').classList.toggle('naviAnim');
+        navi.classList.toggle('naviAnim');
         setTimeout(()=>{
           e.target.classList.toggle('hamburger-open');
+          navi.style.pointerEvents = 'none';
         }, 300);
       } else {
+        navi.style.pointerEvents = 'auto';
         e.target.parentNode.classList.toggle('top-header-anim');
-        document.querySelector('.navi').classList.toggle('naviAnim');
+        navi.classList.toggle('naviAnim');
         e.target.classList.toggle('hamburger-open');
         setTimeout(()=>{
           e.target.classList.toggle('hamburger-end');
@@ -377,24 +381,26 @@ window.onload = () => {
     let left = document.querySelector('.left-arrow-block');
     let right = document.querySelector('.right-arrow-block');
     var jump_treshold = window.innerWidth > 1200 ? 280 : 200;
-    var elem_count = 3;
-    var counter = 1;
+    var elem_count = window.innerWidth > 700 ? 3 : 1;
+    var counter = window.innerWidth > 700 ? 1 : 2;
     var place = 0;
-    var left_distance = 360;
+    var left_distance = window.innerWidth > 700 ? 360 : 200;
 
-    console.log(slider_team.style.left);
+    if(window.innerWidth < 450){
+      jump_treshold = 140;
+    }
 
     right.addEventListener('click', ()=>{
 
         if(place < 2){
-          member[place].style.margin = '0 400px 0 0';
+          member[place].style.margin = '0 '+ left_distance +'px 0 0';
           member[elem_count].style.margin = '0 -10px 0 -10px';
           if(place > 0){
             member[place - 1].style.margin = '0 0 0 0';
           }
           place++; counter--; elem_count++;
           slider_team.style.left = (jump_treshold * counter) + 'px';
-          member[elem_count].style.margin = '0 400px 0 -10px';
+          member[elem_count].style.margin = '0 '+ left_distance +'px 0 -10px';
 
           left_distance = parseInt(slider_team.style.left);
         }
