@@ -9,7 +9,7 @@ It's pure fun not used in any commercial or profit way. It's practice while maki
 What I done:
 
 1. **HTML** / Sematic **HTML5**
-2. **CSS** / reset.css / **SASS**
+2. **CSS** responsive / reset.css / **SASS**
 3. **JavaScript** / **jQuery** / AJAX / JSON / Slider
 4. **GULP**
 &nbsp; &nbsp;<br/> a) Minify **JavaScript** and **CSS**
@@ -22,7 +22,9 @@ Video has custom controls made with JavaScript. Double click fullscreen. Click p
 
 Slider is draggable with mouse or touch screen and is dynamically made.
 
-Desktop version is up and running. Next, compatibility with other resolutions.
+It's done and running.
+
+Compatibility tested with Desktop, Samsung Galaxy 6, iPad Pro 2017.
 
 ![Website image](https://i.ibb.co/QF28JGc/screencapture-127-0-0-1-3000-2019-12-17-18-20-55.png)
 
