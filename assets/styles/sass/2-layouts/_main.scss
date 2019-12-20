@@ -599,6 +599,10 @@ main {
 }
 
 @media only screen and (max-width: 410px){
+  .about-content {
+    top: -60px!important;
+  }
+  
   .right-side {
     margin-left: 0!important;
   }
