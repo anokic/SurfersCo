@@ -1,5 +1,10 @@
 window.onload = () => {
 
+  /// LOADING
+
+    document.querySelector('.loading').style.display = 'none';
+
+  ///
 
   /// NAVI
 
