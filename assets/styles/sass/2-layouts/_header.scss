@@ -572,6 +572,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 1830px){
+  .logo {
+    width: 210px!important;
+  }
+}
+
 @media only screen and (max-width: 1800px){
   #wrapper {
     width: 1106px!important;
