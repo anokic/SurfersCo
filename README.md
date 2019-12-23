@@ -28,6 +28,8 @@ Compatibility tested with Desktop, Samsung Galaxy 6, iPad Pro 2017.
 
 ![Website image](https://i.ibb.co/QF28JGc/screencapture-127-0-0-1-3000-2019-12-17-18-20-55.png)
 
+Speed test:
+
 ![Speed test](https://i.ibb.co/WDDs3KC/brisi.png)
 
 **Designed by Luis Costa: https://www.dropbox.com/s/maquut3euef51w3/Surfers%20Co%20Free%20PSD%20Template.rar?dl=0**
