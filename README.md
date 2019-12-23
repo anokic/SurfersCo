@@ -22,7 +22,7 @@ Video has custom controls made with JavaScript. Double click fullscreen. Click p
 
 Slider is draggable with mouse or touch screen and is dynamically made.
 
-It's done and running.
+It's done and running. Demo: http://brankoanokic.com/projects/Surfers/index.html
 
 Compatibility tested with Desktop, Samsung Galaxy 6, iPad Pro 2017.
 

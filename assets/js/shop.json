@@ -11,8 +11,8 @@
 
       "imgs" : {
         "img1" : "assets/img/board.png",
-        "img2" : "assets/img/board-four.png",
-        "img3" : "assets/img/board-second.png",
+        "img2" : "assets/img/board2.png",
+        "img3" : "assets/img/board2-four.png",
         "img4" : "assets/img/board-third.png"
       }
   },
@@ -79,8 +79,8 @@
 
       "imgs" : {
         "img1" : "assets/img/board5.png",
-        "img2" : "assets/img/board5-four.png",
-        "img3" : "assets/img/board5-second.png",
+        "img2" : "assets/img/board-third.png",
+        "img3" : "assets/img/board2-four.png",
         "img4" : "assets/img/board5-third.png"
       }
   },

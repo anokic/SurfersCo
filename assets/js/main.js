@@ -401,13 +401,12 @@ window.onload = () => {
           member[place].style.margin = '0 '+ left_distance +'px 0 0';
           member[elem_count].style.margin = '0 -10px 0 -10px';
           if(place > 0){
+
             member[place - 1].style.margin = '0 0 0 0';
           }
           place++; counter--; elem_count++;
           slider_team.style.left = (jump_treshold * counter) + 'px';
           member[elem_count].style.margin = '0 '+ left_distance +'px 0 -10px';
-
-          left_distance = parseInt(slider_team.style.left);
         }
     })
 
@@ -423,7 +422,6 @@ window.onload = () => {
           member[place + 1].style.margin = '0 -10px 0 -10px';
           member[elem_count].style.margin = '0 400px 0 -10px';
           member[place].style.margin = '0 -10px 0 400px';
-          left_distance = parseInt(slider_team.style.left);
         }
     })
 
