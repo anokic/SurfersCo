@@ -2,7 +2,7 @@
 
 **PSD** to **HTML**
 
-Found a beautiful design and wanted to recreate it in exact and event better way then on **PSD**
+Found a beautiful design and wanted to recreate it in exact and even better way.
 
 It's pure fun not used in any commercial or profit way. It's practice while making a beautiful design.
 
